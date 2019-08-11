@@ -1,0 +1,56 @@
+/* components/ad/index.wxss */
+
+.ad-container {
+  width: 100%;
+  position: relative;
+}
+
+.ad-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.ad-container .nav-dot {
+  position: absolute;
+  padding: 2rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-container .nav-dot-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ad-container .nav-dot-left {
+  left: 10rpx;
+}
+
+.ad-container .nav-dot-right {
+  right: 10rpx;
+}
+
+.ad-container .nav-dot .nav-item {
+  display: block;
+  background: rgba(255, 255, 255);
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  margin: 0 4rpx;
+}
+
+.ad-container .nav-dot .nav-item-active {
+  opacity: 0.8;
+}
+
+.ad-container .nav-dot .dot-item {
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+}
+
+.ad-container .nav-dot .rect-item {
+  width: 64rpx;
+  height: 14rpx;
+  border-radius: 14rpx;
+}

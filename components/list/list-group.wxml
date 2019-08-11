@@ -1,0 +1,4 @@
+<view class="list-group-container custom-class" style="border-color:{{border?'#eee':''}}">
+<slot></slot>
+</view>
+

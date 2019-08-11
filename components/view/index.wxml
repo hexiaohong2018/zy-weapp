@@ -1,0 +1,32 @@
+<!--components/view/index.wxml-->
+<view class="view-container">
+  <view class="loading {{status == 0?'loading-hidden':''}}" style="transform:translateY({{status!=0?(loadHeight/2 + (safeTopArea?safeTopAreaHeight:0) -70)+'px':'-100%'}})">
+
+    <view wx:if="{{status == 1 || status == 2}}" class="pull">
+      <view class="text">{{status == 1?'下拉刷新':'松开刷新'}}</view>
+      <view class="icon">
+        <zy-icon name="{{status== 1?'arrow-down':'arrow-up'}}" color="{{refreshColor}}" />
+      </view>
+    </view>
+
+    <load-more wx:elif="{{status==3}}" type="{{refreshType}}" color="{{refreshColor}}" />
+
+    <view wx:elif="{{status==4}}" class="success">
+      <view class="icon">
+        <zy-icon name="success" color="{{refreshColor}}" />
+      </view>
+      <view class="text">刷新成功</view>
+    </view>
+    <view wx:elif="{{status==5}}" class="cross">
+      <view class="icon">
+        <zy-icon name="cross" color="{{refreshColor}}" />
+      </view>
+      <view class="text">加载失败</view>
+    </view>
+  </view>
+  <scroll-view scroll-y enable-back-to-top scroll-with-animation class="view-content  {{(status==4 || status==3 ||status==5)?'view-content-transition':''}}" style="height:{{scrollViewHeight}}px; top:{{status==0?0:loadHeight/2 + (safeTopArea?safeTopAreaHeight:0)}}px"
+    bindtouchend="touchEnd" bindtouchstart="touchStart" bindscroll="onScroll" bindtouchmove="touchMove" bindscrolltoupper="toUpper" bindscrolltolower="toLower">
+    <slot></slot>
+    <load-more loading="{{load}}" tip="{{loadText}}" />
+  </scroll-view>
+</view>

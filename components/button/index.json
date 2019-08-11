@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zy-icon":"../icon/index",
+    "zy-load-more":"../load-more/index"
+  }
+}

@@ -1,0 +1,6 @@
+var getShowClass = function(position){
+  return 'popup-'+position+'-show'
+}
+module.exports = {
+  getShowClass: getShowClass
+};

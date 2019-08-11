@@ -1,0 +1,19 @@
+<!--components/list/index.wxml-->
+<view class="list-container" bindtap="goTo" style="border-color:{{border?'#eee':''}}">
+  <view class="title-container">
+    <view wx:if="{{icon}}" class="icon">
+      <image wx:if="{{isPic}}" src="{{icon}}"></image>
+      <dc-icon wx:else name="{{icon}}" />
+    </view>
+    <slot wx:else name="icon"></slot>
+    <view class="title">
+      <view class="content title-class">{{title}}</view>
+      <view class="lable lable-class">{{label}}</view>
+    </view>
+  </view>
+  <view class="value-container">
+    <view wx:if="{{value}}" class="value value-class">{{value}}</view>
+    <slot wx:else name="value"></slot>
+    <view wx:if="{{url}}" class="link"></view>
+  </view>
+</view>

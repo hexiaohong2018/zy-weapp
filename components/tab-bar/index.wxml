@@ -1,0 +1,12 @@
+<!--components/nav-bar/index.wxml-->
+<view class='nav-bar-container' style='padding-bottom: {{safeHeight}}px;border-color:{{border?"#eee":""}}'>
+  <view class='item' wx:for="{{items}}" wx:key="" style='width:{{100/items.length}}%' data-index="{{index}}" bindtap="onSelect">
+    <zy-badge count="{{item.count}}">
+      <view class='icon'>
+        <image wx:if="{{item.iconPath}}" class="img" src="{{active==index?item.activeIconPath:item.iconPath}}" mode='aspectFit'></image>
+        <zy-icon wx:else name="{{item.icon}}" size='20px' color='{{active==index?color:"#999"}}' />
+      </view>
+    </zy-badge>
+    <view class='title' style='color:{{active==index?color:"#999"}}'>{{item.text}}</view>
+  </view>
+</view>

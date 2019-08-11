@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zy-popup":"../popup/index"
+  }
+}

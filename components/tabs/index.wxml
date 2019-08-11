@@ -1,0 +1,7 @@
+<!--components/tabs/index.wxml-->
+<scroll-view scroll-x scroll-with-animation scroll-into-view="{{scrollIndex}}" class="tabs-container" style="border-color:{{border?'#eee':''}}">
+  <ul class="tabs" bindtap="onTab">
+    <li class="tab title-class {{active === index ?'active-tab':''}}" wx:for="{{titles}}" wx:key="{{item}}" id="_{{index}}" data-index="{{index}}" style="width:{{itemWidth}}%">{{item}}</li>
+    <view class="slide" style="left:{{active*itemWidth}}%;margin-left:{{itemWidth/2}}%;width:{{itemWidth*(titles.length < 4?titles.length:4)}}rpx"></view>
+  </ul>
+</scroll-view>

@@ -1,0 +1,12 @@
+<!--components/badge/index.wxml-->
+<view class="badge-container custom-class">
+  <view wx:if="{{img}}" class="img">
+    <image src='{{img}}' mode='aspectFit'></image>
+  </view>
+
+  <block wx:else>
+    <view wx:if="{{count > 0}}" class="info" style="background:{{color}};padding:{{count > 9?'5':'2'}}px;">{{info}}</view>
+    <view wx:if="{{count <= 0 && dot}}" class="dot" style="background:{{color}}"></view>
+  </block>
+  <slot></slot>
+</view>

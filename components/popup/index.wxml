@@ -1,0 +1,8 @@
+<!--components/popup/index.wxml-->
+<wxs src="index.wxs" module="tools" />
+<view class="popup-container">
+  <view wx:if="{{show && mask}}" class="masking" style="top:{{(safeType=='top'|| safeType=='all')?menuHeight:0}}px; bottom:{{(safeType=='bottom'|| safeType=='all')?tabBarHeight:0}}px;" bindtap="onHidden"></view>
+  <view class="popup-content popup-{{position}} {{show?tools.getShowClass(position):''}}" style="top:{{position=='bottom'?'':(safeType=='top'|| safeType=='all')?menuHeight:0}}px;bottom:{{position=='top'?'':(safeType=='bottom'|| safeType=='all')?tabBarHeight:0}}px;">
+    <slot></slot>
+  </view>
+</view>

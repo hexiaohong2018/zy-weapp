@@ -1,0 +1,56 @@
+/* components/view/index.wxss */
+
+.view-container {
+  width: 100%;
+  position: relative;
+}
+
+.view-container .loading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 140rpx;
+  overflow: hidden;
+  z-index: -99;
+}
+
+.view-container .loading-hidden {
+  transition: transform 0.3s linear;
+  transform: translateY(-100%);
+}
+
+
+.view-container .loading .text {
+  font-size: 26rpx;
+  color: #666;
+}
+.view-container .loading .icon{
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-container .loading .pull, .view-container .loading .success, .view-container .loading .cross{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-container .view-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* bottom: 10rpx; */
+  width: 100%;
+  overflow: auto;
+}
+
+.view-container .view-content-transition {
+  transition: top 0.3s linear;
+}

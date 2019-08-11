@@ -1,0 +1,48 @@
+/* components/popup/index.wxss */
+.popup-container{
+  z-index: 100
+}
+.popup-container  .masking{
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.popup-container .popup-content{
+  position: fixed;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.popup-container  .popup-top{
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transform: translateY(-100%);
+}
+
+.popup-container  .popup-bottom{
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  transform: translateY(100%);
+}
+.popup-container  .popup-left{
+  left: 0;
+  transform: translateX(-100%);
+  bottom: 0;
+}
+.popup-container  .popup-right{
+  right: 0;
+  transform: translateX(100%);
+  bottom: 0;
+}
+
+.popup-container  .popup-bottom-show,.popup-container  .popup-top-show{
+  transform: translateY(0);
+}
+
+.popup-container  .popup-left-show,.popup-container  .popup-right-show{
+  transform: translateX(0);
+}

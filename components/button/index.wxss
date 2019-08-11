@@ -1,0 +1,71 @@
+/* components/button/index.wxss */
+
+
+.btn {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  box-sizing: border-box;
+
+  border: 1px solid #eee;
+  background: white;
+  color: #333;
+
+  width: 50vw;
+  height: 80rpx;
+  font-size: 28rpx;
+}
+
+.btn::after {
+  border: 0;
+}
+.btn-hover{
+   opacity: 0.7 !important;
+}
+.btn .button-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-success{
+  background: #07c160;
+  color: white;
+  border: 1px solid #07c160;
+}
+.btn-info{
+  background: #1989fa;
+  color: white;
+  border: 1px solid #1989fa;
+}
+.bin-warning{
+  background: #ff976a;
+  color: white;
+  border: 1px solid #ff976a;
+}
+.btn-danger{
+  background: #f44;
+  color: white;
+  border: 1px solid #f44;
+}
+
+.btn-large{
+  width: 100vw;
+  height: 100rpx;
+  font-size: 34rpx;
+}
+.btn-small{
+  width: 30vw;
+  height: 65rpx;
+  font-size: 24rpx;
+}
+.btn-min{
+  width: 18vw;
+  height: 48rpx;
+  font-size: 20rpx;
+}
+
+
+

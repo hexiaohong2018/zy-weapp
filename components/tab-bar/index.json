@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zy-badge":"../badge/index",
+    "zy-icon":"../icon/index"
+  }
+}

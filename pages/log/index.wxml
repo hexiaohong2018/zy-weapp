@@ -1,0 +1,3 @@
+<!--pages/log/index.wxml-->
+<text>pages/log/index.wxml</text>
+<button bindtap="onTab">设置tabBar</button>

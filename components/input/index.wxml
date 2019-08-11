@@ -1,0 +1,17 @@
+<!--components/input/index.wxml-->
+<view class="input-container" style="border-color:{{border?'#eee':''}}">
+  <view wx:if="{{required}}" class="must-fill-dot">*</view>
+  <view wx:if="{{icon}}" class="left-icon">
+    <zy-icon name="{{icon}}" size="40rpx" color="{{iconColor}}" />
+  </view>
+  <slot wx:else name="icon"></slot>
+  <view class="title title-class">详细地址</view>
+  <view class="content">
+    <textarea wx:if="{{autosize}}" type="{{type}}" bindblur="onBindBlur" style="height:1.4rem" auto-height value="{{value}}" placeholder="{{placeholder}}" disabled="{{disabled}}" placeholder-class="placeholder" password="{{password}}" />
+    <input wx:else type="{{type}}" bindblur="onBindBlur" value="{{value}}" placeholder="{{placeholder}}" disabled="{{disabled}}" placeholder-class="placeholder" password="{{password}}" />
+  </view>
+  <view wx:if="{{rightIcon}}" class="right-icon">
+    <zy-icon name="{{rightIcon}}" size="40rpx" color="{{rightIconColor}}" />
+  </view>
+  <slot wx:else name="right-icon"></slot>
+</view>

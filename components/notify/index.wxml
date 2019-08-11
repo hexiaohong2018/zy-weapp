@@ -1,0 +1,4 @@
+<!--components/notify/index.wxml-->
+<zy-popup position="top" show="{{show}}" mask="{{false}}">
+<view class="content" style="color:{{color}};background:{{background}}">{{text}}</view>
+</zy-popup>

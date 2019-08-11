@@ -1,0 +1,53 @@
+/* components/nav-bar/index.wxss */
+.nav-bar-container{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  border-top: 1px solid transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+  height: 50px;
+  background: white;
+}
+
+.nav-bar-container .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+.nav-bar-container .item .icon{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+  margin: 3px auto;
+  /* zoom: 0.9; */
+  /* transition: zoom 0.3s linear; */
+}
+/* .nav-bar-container .item .active-icon{
+  zoom: 1.1;
+  transition: zoom 0.3s linear;
+} */
+.nav-bar-container .item .title{
+  font-size: 12px;
+  padding-top: 1px;
+}
+.nav-bar-container .item .icon .img{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar-container .blur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

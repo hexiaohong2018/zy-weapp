@@ -1,0 +1,15 @@
+/* components/notify/index.wxss */
+
+.content {
+  width: 100%;
+  padding: 10rpx 20rpx;
+  font-size: 30rpx;
+  opacity: 0.9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 1.3rem;
+}

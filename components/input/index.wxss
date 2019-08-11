@@ -1,0 +1,56 @@
+/* components/input/index.wxss */
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82rpx;
+  box-sizing: border-box;
+  padding: 8rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid transparent;
+}
+
+.input-container .must-fill-dot {
+  width: 20rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.input-container .left-icon, .input-container .right-icon {
+  width: 50rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rpx;
+}
+
+.input-container .title {
+  height: 100%;
+  padding-left: 10rpx;
+  width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:#303133;
+}
+
+.input-container .content {
+  flex-grow: 1;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.input-container .content textarea, .input-container .content input {
+  width: 100%;
+  height: 1.4rem;
+  color: #606266;
+}
+.placeholder{
+  color:#C0C4CC;
+}

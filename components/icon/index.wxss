@@ -1,0 +1,6 @@
+@import "iconfont.wxss";
+
+icon-container .img{
+  width:22px;
+  height: 22px;
+}

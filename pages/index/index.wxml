@@ -1,0 +1,7 @@
+<zy-nav title="首页" background="#f44" clear-float/>
+<view style="width:100%">
+  <zy-tabs titles="{{titles}}" bind:change="test" title-class="test" slide-class="test2"></zy-tabs>
+</view>
+
+
+<zy-tab-bar border items="{{items}}" color="#f44" bind:change="onChange" />

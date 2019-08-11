@@ -1,0 +1,13 @@
+<!--components/ad/index.wxml-->
+<view class="ad-container" style="height:{{height}}rpx">
+  <swiper class="swiper" previous-margin="{{imgMargin}}rpx" next-margin="{{imgMargin}}rpx" autoplay="{{autoplay}}" circular display-multiple-items="{{displayMultipleItems}}"  bindchange="onChange">
+    <block wx:for="{{items}}" wx:key>
+      <swiper-item>
+        <image id="img" src="{{item}}" style="width:100%;" mode="widthFix" bindload="onload" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <ul class="nav-dot nav-dot-{{dotPosition}}" style="bottom: {{18*zoom}}rpx;">
+    <li wx:for="{{items}}" wx:key="" class="nav-item {{dotType?dotType+'-item':''}} {{current == index?'nav-item-active':''}}" style="zoom:{{zoom}}"></li>
+  </ul>
+</view>

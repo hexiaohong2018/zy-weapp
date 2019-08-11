@@ -1,0 +1,51 @@
+/* components/submit-bar/index.wxss */
+.submit-container{
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid transparent;
+  background: white;
+  z-index: 99;
+}
+.submit-container-fixed{
+  position: fixed;
+  left: 0;
+}
+.submit-container .left{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.submit-container .price{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+.submit-container .price .label{
+  color: #666;
+  font-size: 34rpx;
+}
+.submit-container .price .value{
+  font-weight: 600;
+  color: #f44;
+  padding-left: 30rpx;
+  position: relative;
+}
+.submit-container .price .value::before{
+  content: "￥";
+  transform: scale(0.78);
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
+.submit-container .mybtn{
+  height: 100% !important;
+  width: 30vw !important;
+}

@@ -1,0 +1,25 @@
+<!--components/button/index.wxml-->
+
+<button class="btn btn-{{type}} btn-{{size}} coustom-class"
+  bindgetuserinfo="getUserInfo"
+  bindcontact="contact" 
+  bindgetphonenumber="getphonenumber"
+  bindopensetting="opensetting"
+  bindlaunchapp="launchapp"
+  size="{{size}}"
+  disabled="{{disabled}}"
+  form-type="{{formType}}"
+  open-type = "{{openType}}"
+  hover-class="btn-hover"
+
+  style="border-radius:{{round?borderSadius:0}}rpx;opacity:{{disabled?0.7:1}};background:{{plain?'white':backgroundData}};color:{{plain?backgroundData:colorData}};border-color:{{type=='default'?borderColor:backgroundData}}">
+
+  <!-- 按键的内容 -->
+  <zy-load-more style="margin-right: 10rpx;" wx:if="{{loading}}" color="{{plain?backgroundData:colorData}}"  />
+  <zy-icon wx:elif="{{icon}}" style="margin-right: 10rpx;" name="{{icon}}" size="{{fontSize}}rpx" color="{{plain?backgroundData:colorData}}" />
+  <view class="button-content">
+    <slot></slot>
+  </view>
+  <zy-icon wx:if="{{rightIcon}}" style="margin-left:10rpx" name="{{rightIcon}}" size="{{fontSize}}rpx" color="{{plain?backgroundData:colorData}}" />
+</button>
+

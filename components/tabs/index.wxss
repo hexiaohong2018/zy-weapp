@@ -1,0 +1,47 @@
+/* components/tabs/index.wxss */
+
+.tabs-container {
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+}
+
+.tabs-container .tabs {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.tabs-container .tab {
+  background: white;
+  text-align: center;
+  color: #aaa;
+  min-width: 25%;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+  padding: 10rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabs-container .active-tab {
+  color: #f44;
+  font-size: 34rpx;
+  transition: all 0.3s ease-in;
+}
+
+.tabs-container .slide {
+  position: absolute;
+  bottom: 0;
+  height: 6rpx;
+  border-radius: 6rpx;
+  background: #f44;
+  z-index: 1;
+  transition: left 0.3s linear;
+  transform: translateX(-50%);
+}

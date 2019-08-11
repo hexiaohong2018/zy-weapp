@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zy-button":"../button/index"
+  }
+}

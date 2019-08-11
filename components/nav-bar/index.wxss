@@ -1,0 +1,63 @@
+/* components/nav-bar/index.wxss */
+
+.nav-bar-container {
+  width: 100vw;
+}
+
+
+.nav-bar-container .menu-bar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 10000;
+  transition: opacity 0.3s linear;
+}
+.nav-bar-container .status-bar{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 10000;
+  transition: opacity 0.3s linear;
+}
+.nav-bar-container .menu-bar .menu-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.nav-bar-container .left {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-container .left .back {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transform: rotate(45deg);
+  margin-left: 10px;
+}
+
+
+.nav-bar-container .title {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.nav-bar-container .clear-float{
+  clear: both;
+  /* transition: height 0.3s linear; */
+}

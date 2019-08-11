@@ -1,0 +1,11 @@
+<!--components/submit-bar/index.wxml-->
+<view class="submit-container submit-container-fixed" style="padding-bottom:{{safeBottomHeight}}px; border-color:{{border?'#eee':''}};bottom:{{fixedBottomHeight}}px">
+  <view class="left">
+    <slot></slot>
+  </view>
+  <view class="price">
+    <view class="label label-class">{{labelText}}：</view>
+    <view class="value value-class">{{price}}</view>
+  </view>
+  <zy-button type="{{buttonType}}" size="large" background="{{buttonColor}}" color="{{buttonTextColor}}" loading="{{loading}}" coustom-class="mybtn btn-class" style="height:100%" bindtap="onSubmit">{{buttonText}}</zy-button>
+</view>

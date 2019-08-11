@@ -1,0 +1,21 @@
+<!--components/load-more/index.wxml-->
+<view class='load-container' style="flex-direction:{{row?'row':'column'}};">
+  <!-- 加载图标 -->
+  <view wx:if="{{loading}}" class='icon'>
+    <block wx:if="{{type == 'dot'}}">
+      <view class='dot dot1' style='background:{{color}}'></view>
+      <view class='dot dot2' style='background:{{color}}'></view>
+      <view class='dot dot3' style='background:{{color}}'></view>
+    </block>
+    <block wx:else>
+      <view class='circle' style='border-top-color:{{color}}'></view>
+    </block>
+  </view>
+
+  <!-- 提示文本 -->
+  <view wx:if="{{tip}}" class='tip' style="width:{{row?'':'100%'}};">
+    <view wx:if="{{!loading}}" class='left-line'></view>
+    <view class='content'>{{tip}}</view>
+    <view wx:if="{{!loading}}" class='right-line'></view>
+  </view>
+</view>

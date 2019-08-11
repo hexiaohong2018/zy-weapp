@@ -1,0 +1,56 @@
+/* components/list/index.wxss */
+.list-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-bottom: 2rpx solid transparent;
+}
+.list-container .title-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list-container .title-container .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list-container .title-container .title .content{
+  font-size: 30rpx;
+}
+.list-container .title-container .title .lable{
+  font-size: 26rpx;
+  color: #999;
+}
+.list-container .title-container .icon{
+  padding-right: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  overflow: hidden;
+}
+.list-container .title-container .icon image{
+  width: 100%;
+  height: 100%;
+}
+
+.list-container .value-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-container .value-container .value{
+  font-size: 28rpx;
+  color: #666;
+  padding-right: 5rpx;
+}
+.list-container .value-container .link{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #999;
+  border-right: 4rpx solid #999;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
